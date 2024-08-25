@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root{
+    --main-linear-gradient:linear-gradient(110deg, rgba(243, 44, 109, 1), rgba(203, 29, 149, 1));
+    --main-color: rgba(243, 44, 109, 1);
+    --box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+body{
+    background: rgba(247, 246, 255, 1);
+}
+
+body > *{
+    max-width: 1590px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+header nav .nav-logo{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .nav-logo img{
+    width: 100%;
+}
+header nav .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+header nav .nav-links a{
+    font-weight: 500;   
+}
+
+header nav .nav-right button{
+    background: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    padding: 70px 100px;
+}
+#home .home-about{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#home .home-about h2{
+    font-size: 50px;
+    font-weight: 200;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+#home .home-about h2 span{
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: none;
+}
+#home .home-about .home-about-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#home .home-about .home-about-btns button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(119, 178, 211, 1);
+    color: #fff;
+}
+
+#about{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 10px 100px;
+}
+#about .about-container{
+    width: 100%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+#about .about-container h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#about .about-container .about-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#about .about-container .about-us h1{
+    font-size: 30px;
+    color: var(--main-color);
+    text-transform: none;
+}
+#about .about-container .about-us hr{
+    width: 1px;
+    height: 70px;
+    border: 1px solid #cccccc72;
+}
+
+#pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 100px;
+}
+#pricing .pricing-cards{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+#pricing .pricing-cards .pricing-card{
+    width: 300px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+#pricing .pricing-cards .pricing-card .pricing-card-header{
+    width: 100%;
+    height: 100px;
+    background: rgba(119, 178, 211, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+}
+#pricing .pricing-cards .pricing-card .pricing-card-main{
+    padding: 20px 20px 100px 20px;
+}
+#pricing .pricing-cards .pricing-card .pricing-card-main .pricing-features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#pricing .pricing-cards .pricing-card .pricing-card-bottom{
+    border-top: 2px solid #cccccc72;
+    padding: 20px;
+}
+#pricing .pricing-cards .pricing-card .pricing-card-more{
+    background: #f7f6ff;
+    padding: 20px;
+}
+#pricing .pricing-cards .pricing-card .pricing-card-more button{
+    padding: 10px 20px;
+    background: var(--main-linear-gradient);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+
+#ordering{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+#ordering .ordering-left{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#ordering .ordering-left h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+#ordering .ordering-left form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#ordering .ordering-left form > div:nth-child(1) input,
+#ordering .ordering-left form > textarea{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+#ordering .ordering-left form textarea{
+    max-height: 600px;
+    resize: none;
+}
+#ordering .ordering-left form > div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+#ordering .ordering-left form > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#ordering .ordering-left form > div:nth-child(3) input{
+    width: 20px;
+    height: 20px;
+}
+#ordering .ordering-left form > button{
+    background: var(--main-linear-gradient);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+#ordering .ordering-right img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+#our-works{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 100px;
+}
+#our-works .our-works-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#our-works .our-works-header h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+#our-works .our-works-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#our-works .our-works-card{
+    width: 600px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+#our-works .our-works-card > div,table{
+    padding: 10px;
+}
+#our-works .our-works-cards .our-works-card-header img{
+    width: 200px;
+}
+#our-works .our-works-card .our-works-card-main{
+    background: #f7f6ff;
+}
+#our-works .our-works-card .our-works-card-main th{
+    font-weight: 700;
+    text-align: start;
+    font-size: 1.3rem;
+}
+
+#our-works .our-works-card .our-works-card-main td{
+    width: 200px;
+}
+#our-works .our-works-card .sys{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#our-works .our-works-card img{
+    width: 100px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background: #fff;
+    margin-top: 100px;
+}
+footer ul, footer > div{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer button{
+    background: var(--main-linear-gradient);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#copyright{
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px){
+    header nav{
+        padding: 10px 20px;
+    }
+    header nav .nav-links{
+        display: none;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #pricing .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #ordering{
+        flex-direction: column-reverse;
+    }
+    #ordering .ordering-left{
+        align-items: center;
+        text-align: center;
+    }
+    #our-works{
+        padding: 10px 20px;
+    }
+    #our-works .our-works-cards{
+        flex-direction: column;
+    }
+    #our-works .our-works-cards .our-works-card{
+        width: 100%;
+    }
+    #home .home-about{
+        text-align: center;
+    }
+    #home .home-img img{
+        width: 100%;
+    }
+    #about{
+        padding: 10px 20px;
+    }
+    #about .about-container{
+        text-align: center;
+    }
+    #about .about-container h1{
+        font-size: 1.5rem;
+    }
+    #about .about-us{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #about .about-container .about-us hr{
+        width: 100%;
+        height: 1px;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    footer > div{
+        align-items: center;
+    }
+}
+@media (max-width: 1020px){
+    header nav{
+        padding: 10px 20px;
+    }
+    header nav .nav-links{
+        display: none;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #pricing .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #ordering{
+        flex-direction: column-reverse;
+    }
+    #ordering .ordering-left{
+        align-items: center;
+        text-align: center;
+    }
+    #our-works{
+        padding: 10px 20px;
+    }
+    #our-works .our-works-cards{
+        flex-direction: column;
+    }
+    #our-works .our-works-cards .our-works-card{
+        width: 100%;
+    }
+    #home .home-about{
+        text-align: center;
+    }
+    #home .home-img img{
+        width: 100%;
+    }
+    #about{
+        padding: 10px 20px;
+    }
+    #about .about-container{
+        text-align: center;
+    }
+    #about .about-container h1{
+        font-size: 1.5rem;
+    }
+    #about .about-us{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #about .about-container .about-us hr{
+        width: 100%;
+        height: 1px;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    footer > div{
+        align-items: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    #our-works .our-works-cards{
+        flex-direction: column;
+    }
+    #our-works .our-works-cards .our-works-card{
+        width: 100%;
+    }
+}
